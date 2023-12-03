@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style1.css">
+    <title>Document</title>
+</head>
+<body>
+  <audio autoplay>
+    <source src="music/music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+
+    <div class="backDdesign" id="backDdesign">
+        <div class="selection">
+            <span class="category" for="category">Select your Category:</span>
+        </div>
+    </div>
+
+    <div class="container" id="container">
+        <div class="options-container">
+    
+            <div class="button-container">
+                <button class="option-button" id="addition" onclick="showDifficultyPopup('addition')">Addition</button>
+                <button class="option-button" id="subtraction" onclick="showDifficultyPopup('subtraction')">Subtraction</button>
+                <button class="option-button" id="multiplication" onclick="showDifficultyPopup('multiplication')">Multiplication</button>
+                <button class="option-button" id="division" onclick="showDifficultyPopup('division')">Division</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+      <button class="backButton" id="backButton">BACK</button>
+    </div>
+    
+
+
+    <div class="backDdesign1" id="backDdesign1">
+        <div class="selection1">
+            <span class="category1" id="category1" for="category">Select your Difficult:</span>
+        </div>
+    </div>
+
+       <!-- QUIZ ADDITION -->
+    <div class="container1" id="container1">
+        <div class="options-container1">
+    
+            <div class="button-container1">
+                <button class="option-button1" id="easy" >Easy</button>
+                <button class="option-button1" id="medium" >Medium</button>
+                <button class="option-button1" id="difficult" >Difficult</button>
+            </div>
+        </div>
+    </div>
+
+       <!-- QUIZ SUBTRACTION -->
+
+    <div class="container2" id="container2">
+        <div class="options-container2">
+    
+            <div class="button-container2">
+                <button class="option-button2" id="easy2" >Easy</button>
+                <button class="option-button2" id="medium2" >Medium</button>
+                <button class="option-button2" id="difficult2" >Difficult</button>
+            </div>
+        </div>
+    </div>
+
+       <!-- QUIZ MULTIPLECATION -->
+
+    <div class="container3" id="container3">
+        <div class="options-container3">
+    
+            <div class="button-container1">
+                <button class="option-button3" id="easy3" >Easy</button>
+                <button class="option-button3" id="medium3" >Medium</button>
+                <button class="option-button3" id="difficult3" >Difficult</button>
+            </div>
+        </div>
+    </div>
+
+       <!-- QUIZ DIVISION -->
+
+    <div class="container4" id="container4">
+        <div class="options-container4">
+    
+            <div class="button-container4">
+                <button class="option-button4" id="easy4" >Easy</button>
+                <button class="option-button4" id="medium4" >Medium</button>
+                <button class="option-button4" id="difficult4" >Difficult</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EASY QUIZ ADDITION -->
+
+    <div class="quiz" id="quiz">
+        <div class="quiz-container" >
+            <div class="quiz-header">
+              <h2 id="question" class="question">Question Text</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Answer</label>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="backSubmit">
+            <button class="submit" id="submit">SUBMIT</button>
+            <button class="submit" id="back">BACK</button>
+            </div>
+          </div>
+        </div>
+
+         <!-- MEDIUM QUIZ ADDITION -->
+
+        <div class="quiz1" id="quiz1">
+            <div class="quiz-container1" >
+                <div class="quiz-header1">
+                  <h2 id="question1" class="question">Question Text</h2>
+                  <ul>
+                    <li>
+                      <input type="radio" name="answer1" id="a1" class="answer1">
+                      <label for="a1" id="a_text1">Answer</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer1" id="b1" class="answer1">
+                      <label for="b1" id="b_text1">Answer</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer1" id="c1" class="answer1">
+                      <label for="c1" id="c_text1">Answer</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="answer1" id="d1" class="answer1">
+                      <label for="d1" id="d_text1">Answer</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="backSubmit">
+                <button class="submit1" id="submit1">SUBMIT</button>
+                <button class="submit1" id="back1">BACK</button>
+                </div>
+              </div>
+            </div>
+
+             <!-- DIFFICULT QUIZ ADDITION -->
+
+            <div class="quiz2" id="quiz2">
+                <div class="quiz-container2" >
+                    <div class="quiz-header2">
+                      <h2 id="question2" class="question">Question Text</h2>
+                      <ul>
+                        <li>
+                          <input type="radio" name="answer2" id="a2" class="answer2">
+                          <label for="a2" id="a_text2">Answer</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="answer2" id="b2" class="answer2">
+                          <label for="b2" id="b_text2">Answer</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="answer2" id="c2" class="answer2">
+                          <label for="c2" id="c_text2">Answer</label>
+                        </li>
+                        <li>
+                          <input type="radio" name="answer2" id="d2" class="answer2">
+                          <label for="d2" id="d_text2">Answer</label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="backSubmit">
+                    <button class="submit2" id="submit2">SUBMIT</button>
+                    <button class="submit2" id="back2">BACK</button>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- EASY QUIZ SUBTRACTION -->
+
+                <div class="quiz3" id="quiz3">
+                  <div class="quiz-container3" >
+                      <div class="quiz-header3">
+                        <h2 id="question3" class="question">Question Text</h2>
+                        <ul>
+                          <li>
+                            <input type="radio" name="answer3" id="a3" class="answer3">
+                            <label for="a3" id="a_text3">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer3" id="b3" class="answer3">
+                            <label for="b3" id="b_text3">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer3" id="c3" class="answer3">
+                            <label for="c3" id="c_text3">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer3" id="d3" class="answer3">
+                            <label for="d3" id="d_text3">Answer</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="backSubmit">
+                      <button class="submit3" id="submit3">SUBMIT</button>
+                      <button class="submit3" id="back3">BACK</button>
+                      </div>
+                    </div>
+                  </div>
+
+                   <!-- MEDIUM QUIZ SUBTRACTION -->
+
+                <div class="quiz4" id="quiz4">
+                  <div class="quiz-container4" >
+                      <div class="quiz-header4">
+                        <h2 id="question4" class="question">Question Text</h2>
+                        <ul>
+                          <li>
+                            <input type="radio" name="answer4" id="a4" class="answer4">
+                            <label for="a4" id="a_text4">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer4" id="b4" class="answer4">
+                            <label for="b4" id="b_text4">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer4" id="c4" class="answer4">
+                            <label for="c4" id="c_text4">Answer</label>
+                          </li>
+                          <li>
+                            <input type="radio" name="answer4" id="d4" class="answer4">
+                            <label for="d4" id="d_text4">Answer</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="backSubmit">
+                      <button class="submit4" id="submit4">SUBMIT</button>
+                      <button class="submit4" id="back4">BACK</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- DIFFICULT QUIZ SUBTRACTION -->
+
+                  <div class="quiz5" id="quiz5">
+                    <div class="quiz-container5" >
+                        <div class="quiz-header5">
+                          <h2 id="question5" class="question">Question Text</h2>
+                          <ul>
+                            <li>
+                              <input type="radio" name="answer5" id="a5" class="answer5">
+                              <label for="a5" id="a_text5">Answer</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="answer5" id="b5" class="answer5">
+                              <label for="b5" id="b_text5">Answer</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="answer5" id="c5" class="answer5">
+                              <label for="c5" id="c_text5">Answer</label>
+                            </li>
+                            <li>
+                              <input type="radio" name="answer5" id="d5" class="answer5">
+                              <label for="d5" id="d_text5">Answer</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="backSubmit">
+                          <button class="submit5" id="submit5">SUBMIT</button>
+                        <button class="submit5" id="back5">BACK</button>
+                        </div>
+                      </div>
+                    </div>
+
+                     <!-- EASY QUIZ MULTIPLICATION -->
+
+                     <div class="quiz6" id="quiz6">
+                      <div class="quiz-container6" >
+                          <div class="quiz-header6">
+                            <h2 id="question6" class="question">Question Text</h2>
+                            <ul>
+                              <li>
+                                <input type="radio" name="answer6" id="a6" class="answer6">
+                                <label for="a6" id="a_text6">Answer</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="answer6" id="b6" class="answer6">
+                                <label for="b6" id="b_text6">Answer</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="answer6" id="c6" class="answer6">
+                                <label for="c6" id="c_text6">Answer</label>
+                              </li>
+                              <li>
+                                <input type="radio" name="answer6" id="d6" class="answer6">
+                                <label for="d6" id="d_text6">Answer</label>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="backSubmit">
+                          <button class="submit6" id="submit6">SUBMIT</button>
+                          <button class="submit6" id="back6">BACK</button>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- MEDIUM QUIZ MULTIPLICATION -->
+
+                      <div class="quiz7" id="quiz7">
+                        <div class="quiz-container7" >
+                            <div class="quiz-header7">
+                              <h2 id="question7" class="question">Question Text</h2>
+                              <ul>
+                                <li>
+                                  <input type="radio" name="answer7" id="a7" class="answer7">
+                                  <label for="a7" id="a_text7">Answer</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="answer7" id="b7" class="answer7">
+                                  <label for="b7" id="b_text7">Answer</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="answer7" id="c7" class="answer7">
+                                  <label for="c7" id="c_text7">Answer</label>
+                                </li>
+                                <li>
+                                  <input type="radio" name="answer7" id="d7" class="answer7">
+                                  <label for="d7" id="d_text7">Answer</label>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="backSubmit">
+                            <button class="submit7" id="submit7">SUBMIT</button>
+                            <button class="submit7" id="back7">BACK</button>
+                            </div>
+                          </div>
+                        </div>
+
+                         <!-- DIFFICULT QUIZ MULTIPLICATION -->
+
+                         <div class="quiz8" id="quiz8">
+                          <div class="quiz-container8" >
+                              <div class="quiz-header8">
+                                <h2 id="question8" class="question">Question Text</h2>
+                                <ul>
+                                  <li>
+                                    <input type="radio" name="answer8" id="a8" class="answer8">
+                                    <label for="a8" id="a_text8">Answer</label>
+                                  </li>
+                                  <li>
+                                    <input type="radio" name="answer8" id="b8" class="answer8">
+                                    <label for="b8" id="b_text8">Answer</label>
+                                  </li>
+                                  <li>
+                                    <input type="radio" name="answer8" id="c8" class="answer8">
+                                    <label for="c8" id="c_text8">Answer</label>
+                                  </li>
+                                  <li>
+                                    <input type="radio" name="answer8" id="d8" class="answer8">
+                                    <label for="d8" id="d_text8">Answer</label>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="backSubmit">
+                              <button class="submit8" id="submit8">SUBMIT</button>
+                              <button class="submit8" id="back8">BACK</button>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- EASY QUIZ DIVISION -->
+
+                          <div class="quiz9" id="quiz9">
+                            <div class="quiz-container9" >
+                                <div class="quiz-header9">
+                                  <h2 id="question9" class="question">Question Text</h2>
+                                  <ul>
+                                    <li>
+                                      <input type="radio" name="answer9" id="a9" class="answer9">
+                                      <label for="a9" id="a_text9">Answer</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="answer9" id="b9" class="answer9">
+                                      <label for="b9" id="b_text9">Answer</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="answer9" id="c9" class="answer9">
+                                      <label for="c9" id="c_text9">Answer</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="answer9" id="d9" class="answer9">
+                                      <label for="d9" id="d_text9">Answer</label>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="backSubmit">
+                                <button class="submit9" id="submit9">SUBMIT</button>
+                                <button class="submit9" id="back9">BACK</button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- MEDIUM QUIZ DIVISION -->
+
+                            <div class="quiz10" id="quiz10">
+                              <div class="quiz-container10" >
+                                  <div class="quiz-header10">
+                                    <h2 id="question10" class="question">Question Text</h2>
+                                    <ul>
+                                      <li>
+                                        <input type="radio" name="answer10" id="a10" class="answer10">
+                                        <label for="a10" id="a_text10">Answer</label>
+                                      </li>
+                                      <li>
+                                        <input type="radio" name="answer10" id="b10" class="answer10">
+                                        <label for="b10" id="b_text10">Answer</label>
+                                      </li>
+                                      <li>
+                                        <input type="radio" name="answer10" id="c10" class="answer10">
+                                        <label for="c10" id="c_text10">Answer</label>
+                                      </li>
+                                      <li>
+                                        <input type="radio" name="answer10" id="d10" class="answer10">
+                                        <label for="d10" id="d_text10">Answer</label>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                  <div class="backSubmit">
+                                  <button class="submit10" id="submit10">SUBMIT</button>
+                                  <button class="submit10" id="back10">BACK</button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- DIFFICULT QUIZ DIVISION -->
+
+                              <div class="quiz11" id="quiz11">
+                                <div class="quiz-container11" >
+                                    <div class="quiz-header11" >
+                                      <h2 id="question11" class="question">Question Text</h2>
+                                      <ul>
+                                        <li>
+                                          <input type="radio" name="answer11" id="a11" class="answer11">
+                                          <label for="a11" id="a_text11">Answer</label>
+                                        </li>
+                                        <li>
+                                          <input type="radio" name="answer11" id="b11" class="answer11">
+                                          <label for="b11" id="b_text11">Answer</label>
+                                        </li>
+                                        <li>
+                                          <input type="radio" name="answer11" id="c11" class="answer11">
+                                          <label for="c11" id="c_text11">Answer</label>
+                                        </li>
+                                        <li>
+                                          <input type="radio" name="answer11" id="d11" class="answer11">
+                                          <label for="d11" id="d_text11">Answer</label>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div class="backSubmit">
+                                    <button class="submit11" id="submit11">SUBMIT</button>
+                                    <button class="submit11" id="back11">BACK</button>
+                                    </div>
+                                  </div>
+                                </div>
+
+    
+</body>
+<script src="javascript/quiz1.js" defer></script>
+</html>

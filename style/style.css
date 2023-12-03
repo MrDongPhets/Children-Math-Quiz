@@ -1,0 +1,271 @@
+body {
+  background-image: url("/images/blackboard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Adding a minimum height to ensure content is visible on smaller screens */
+  min-height: 100vh;
+  margin: 0; /* Remove default margin for full width */
+}
+
+.WelcomeChildren {
+  left: 50%;
+  top: 55%;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+  color: white;
+  font-size: 8vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center; /* Center text */
+}
+
+.button {
+  display: inline-block;
+  padding: 2% 5%;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 2vw;
+  transition: background-color 0.3s ease;
+  left: 50%;
+  top: 80%;
+  position: absolute;
+  transform: translateX(-50%); /* Center the element horizontally */
+  background-color: orangered;
+  color: aliceblue;
+}
+.button:hover {
+  background-color: #ff1100; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .WelcomeChildren {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 14px;
+    border-radius: 10px;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+  }
+}
+.age{
+  left: 48%;
+  top: 55%;
+  position: absolute;
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+  color: white;
+  font-size: 8vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  text-align: center; /* Center text */
+
+}
+.age label {
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255)3a3;
+}
+
+.age select {
+  padding: 10px;
+  font-size: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #555;
+}
+
+.age select:hover {
+  border-color: #666;
+}
+
+.age select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* Style for the dropdown arrow */
+.age select::after {
+  content: "\25BC";
+  font-size: 14px;
+  color: #555;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style for the dropdown arrow when the select is active */
+.age select:focus::after {
+  content: "\25B2";
+}
+
+.button1{
+  display: inline-block;
+  padding: 2% 5%;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 2vw;
+  transition: background-color 0.3s ease;
+  left: 48%;
+  top: 70%;
+  position: absolute;
+  transform: translateX(-50%); /* Center the element horizontally */
+  background-color: orangered;
+  color: aliceblue;
+
+}
+
+.button1:hover {
+  background-color: #ff1100; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
+/* Popup styles */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.img{
+  width: 300px;
+  mix-blend-mode: darken;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popup p{
+  font-size: 60px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  border-radius: 20px;
+  color: rgb(255, 136, 0);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ff392a;
+  border-radius: 10px;
+  color: white;
+
+}
+
+.close:hover{
+  background-color: rgb(255, 0, 0);
+}
+
+/* Add this to your existing CSS or create a new CSS file */
+
+.agePopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  text-align: center;
+  width: 1000px;
+  height: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.agePopup p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 100px;
+}
+
+.agePopup button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 100px;
+  font-size: 50px;
+}
+
+.agePopup button:hover {
+  background-color: #45a049;
+}
+
+/* Additional styling for overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+body.popup-active {
+  overflow: hidden;
+}
+
+.backButton {
+  padding: 10px 20px;
+  background-color: #f11a1a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  top: 90%;
+  left: 42%;
+  font-size: 30px;
+}
+
+.backButton:hover {
+  background-color: #cc0000;
+}
+
+
+
+
